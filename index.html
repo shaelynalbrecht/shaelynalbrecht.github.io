@@ -18,17 +18,25 @@
     <link href='https://fonts.googleapis.com/css?family=Open%20Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open%20Sans%20Condensed:300' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body onload="typeWriter()">
     <a href="#main" class="skip"> Skip to Content</a>
     <header>
       <nav>
+        <div id="links">
           <a href="index.html" class="current">Home</a>
           <a href="competitive_twirling.html">Competitive Twirling</a>
           <a href="my_story.html">My Story</a>
           <a href="names_to_know.html">Names to Know</a>
           <a href="what_is_baton.html">What is Baton</a>
+        </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
       </nav>
       <h1>Welcome!</h1>
     </header>
@@ -45,6 +53,6 @@
     <div class="qr_code"></div>
     <script type="text/javascript" src = "js/stickynav.js"></script>
     <script type="text/javascript" src = "js/typewriter.js"></script>
-
+    <script type="text/javascript" src = "js/hamburger.js"></script>
   </body>
 </html>

@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open%20Sans%20Condensed:300' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
-  <body>
+  <body onload="typeWriter()">
     <a href="#main" class="skip"> Skip to Content</a>
     <header>
       <nav>
@@ -24,7 +24,8 @@
     </header>
     <main id="main">
       <div class="homepage">
-        <p> Hello! Welcome to my website about baton twirling!</p>
+        <p id="greeting"></p>
+        <!-- <p> Hello! Welcome to my website about baton twirling!</p> -->
         <p> Click around to learn what baton twirling is all about! </p>
       </div>
     </main>
@@ -32,6 +33,7 @@
       <p>&copy; Shaelyn Albrecht <span class="fas fa-star"></span></p>
     </footer>
     <script type="text/javascript" src = "js/stickynav.js"></script>
+    <script type="text/javascript" src = "js/typewriter.js"></script>
 
   </body>
 </html>

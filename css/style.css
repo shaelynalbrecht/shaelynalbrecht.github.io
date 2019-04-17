@@ -243,11 +243,12 @@ iframe {
 
 /*flipcard*/
 img .flipcard_image {
-  max-width: 100%;
-  max-height: 100%;
-  padding: 1%;
+  max-width: 200%;
+  max-height: 200%;
+  /* padding: 1%; */
 
 }
+
 .flip-card {
   background-color: transparent;
   width: 30vw;
@@ -267,12 +268,12 @@ img .flipcard_image {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: /*transform*/ 0.6s;
+  transition: 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card.hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -284,22 +285,30 @@ img .flipcard_image {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #fff;
   color: black;
   z-index: 2;
 }
 
 .flip-card-back {
   background-color: #fff;
-  color: white;
-  transform: rotateY(180deg);
   z-index: 1;
 }
 
-.flipcard p {
-  padding: 1%;
+.flip-card-front:hover {
+  z-index: 1;
+}
+
+.flip-card-back:hover {
+  z-index: 2;
+}
+
+.flip-card-back:hover p {
+  padding: 5%;
   font-size: 100%;
-  text-decoration-color: #000;
+  color: #000;
+  transform: rotateY(180deg);
+  z-index: 2;
 }
 /*end of flipcard*/
 @media only screen and (min-width: 600px){

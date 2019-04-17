@@ -430,14 +430,9 @@ img .flipcard_image {
 @media only screen and (min-width: 1024px){
       /* ---- My Story page picture styling ----- */
 	.overall_my_story_container {
-    /*display: grid;*/
     display: flex;
     flex-direction: row;
-    /*grid-template-columns: 1fr 1fr;*/
-    /*grid-column-gap: 2%;*/
-      /*justify-content: flex-start;*/
-  /*align-items: flex-start;*/
-  align-items: stretch;
+    align-items: stretch;
   }
 
   .my_story_p {
@@ -447,4 +442,10 @@ img .flipcard_image {
   .my_story_p p {
     width: 100%;
   }
+}
+
+@media print {
+       .qr_code{
+            background-image: url('http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://shaelynalbrecht.github.io')
+            }
 }

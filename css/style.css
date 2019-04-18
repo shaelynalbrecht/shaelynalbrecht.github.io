@@ -53,11 +53,13 @@ nav a:hover{
 
 /* Style the hamburger menu */
 nav a.icon {
-  background: black;
+  background: transparent;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+  margin: 2%;
+  margin-bottom: 5%;
 }
 
 
@@ -102,7 +104,7 @@ h1 {
   font-size: 300%;
   background-color: #000000;
   padding: 2% 0% 2% 2%;
-  margin-top: 2%;
+  margin-top: 6%;
   text-align: center;
   border-style: solid;
   border-bottom-color: #A7A6AD;
@@ -145,7 +147,7 @@ p {
 }
 
 main {
-  padding-top: 3%;
+  padding-top: 2%;
   padding-bottom: 10%;
   min-height: 80%;
   background-color: #000;
@@ -350,9 +352,47 @@ img .flipcard_image {
     justify-content: center;
     padding-top: 2%;
   }
+
 }
 
 @media only screen and (min-width: 768px){
+
+    /* Style the navigation menu */
+    #links {
+      overflow: hidden;
+      /* background-color: #333; */
+      position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    #links {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #links .current {
+      display: inline;
+    }
+    nav a {
+      font-family: 'Open Sans Condensed';
+      color: #000000;
+      font-size: 200%;
+      text-decoration: none;
+      padding-left: 1%;
+      padding-right: 1%;
+      padding-bottom: 2%;
+      margin-bottom: 2%;
+      text-align: center;
+    }
+
+    nav a:hover{
+      color: #f599c0;
+    }
+    /* Style the hamburger menu */
+    nav a.icon {
+      display: none;
+    }
+
   /* for desktop */
   nav {
     display: block;

@@ -76,7 +76,7 @@ nav a.icon {
 
 body{
   background: #ffffff;
-  color: #3c006f;
+  /* color: #3c006f; */
   padding-top: 0%;
 }
 
@@ -124,7 +124,8 @@ h3 {
 }
 
 p {
-  color: #000;
+  /* color: #000; */
+  color: #fff;
   font-family: 'Open Sans';
   padding-top: 2%;
   padding-left: 7%;
@@ -176,6 +177,10 @@ footer {
   /*position: absolute;*/
 }
 
+footer p {
+  color: #000;
+}
+
 /* Names to Know page flex styling */
 .names_container, .my_story_p, .overall_my_story_container, .what_is_baton_divs_container {
   display: flex;
@@ -185,7 +190,8 @@ footer {
 }
 
 .names_container  div.twirler_div, .my_story_p, .intro_to_baton, .wuts_baton p, .com_twirl_div p {
-  background-color: rgba(242, 242, 242, 0.8);
+  /* background-color: rgba(242, 242, 242, 0.8); */
+  background-color: #000;
   /*color F39AC0*/
   border-style: solid;
   border-color: #F39AC0;
@@ -212,16 +218,17 @@ footer {
   padding: 4%;
 }
 
-.names_container p, .names_container h2, .my_story_p p {
+.names_container p, .names_container h2, .my_story_p p{
   padding-bottom: 2%;
   width: 75vw;
-  color: #000000;
+  color: #fff;
 }
 
 .names_container > p {
   font-size: 250%;
   font-size: 200%;
-  background-color: rgba(242, 242, 242, 0.8);
+  /* background-color: rgba(242, 242, 242, 0.8); */
+  background-color: #000;
   border-radius: 2%;
   /*text-align: center;*/
 }
@@ -269,6 +276,10 @@ h3 {
   font-size: 200%;
   padding-bottom: 2%;
   margin-bottom: 2%;
+}
+
+.wuts_baton p {
+  color: #000;
 }
 
 iframe {
@@ -408,6 +419,19 @@ end of parallax */
   background-image: url("../images/parallax1.png");
 
   /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/parallax2.jpg");
+
+  /* Set a specific height */
   min-height: 500px;
 
   /* Create the parallax scrolling effect */
@@ -416,7 +440,6 @@ end of parallax */
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 p.homepageInfo {
   height: 60vh;
 }
@@ -467,7 +490,7 @@ p.homepageInfo {
       margin-top: 0%;
     } */
     nav a:hover{
-      color: #f599c0;
+      color: #F3E981;
     }
     /* Style the hamburger menu */
     nav a.icon {

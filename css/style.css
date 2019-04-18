@@ -38,17 +38,12 @@ nav a:hover{
 /* Style the navigation menu */
 #links {
   overflow: hidden;
-  /* background-color: #333; */
   position: relative;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 #links {
   display: none;
-}
-
-#links .current {
-  display: inline;
 }
 
 /* Style the hamburger menu */
@@ -62,17 +57,17 @@ nav a.icon {
   margin-bottom: 5%;
 }
 
-
-
+.active {
+  display: block;
+}
 
 .current {
   background-color: #f599c0;
   font-family: 'Open Sans';
   font-weight: bold;
   border-style: solid;
-  border-bottom: none;
   border-color: #000000;
-  padding: 0px 2px 0px 2px;
+  padding: 0% 2% 0% 2%;
   color: #000000;
   text-transform: uppercase;
 }
@@ -154,14 +149,11 @@ main {
   background-image: url("../images/fancy-cushion.png");
 }
 
-
-
 img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 2%;
   padding: 5%;
-
 }
 
 footer {
@@ -175,7 +167,6 @@ footer {
 }
 
 /* Names to Know page flex styling */
-
 .names_container, .my_story_p, .overall_my_story_container, .what_is_baton_divs_container {
   display: flex;
   flex-direction: column;
@@ -240,10 +231,6 @@ h3 span, h2 span{
   padding-bottom: 0%;
   margin-bottom: -1%;
   color: #fff;
-  /*background-color: #EDDCE3;
-  border-color: #EDDCE3;*/
-  /*border-top-left-radius: 2%;
-  border-top-right-radius: 2%;*/
 }
 
 .wuts_baton h2 {
@@ -257,7 +244,6 @@ h3 span, h2 span{
   margin-left: 5%;
   margin-bottom: 5%;
   padding-left: 3%;
-  /*border-top-left-radius: 0%;*/
 }
 
 iframe {
@@ -274,8 +260,6 @@ iframe {
 img .flipcard_image {
   max-width: 200%;
   max-height: 200%;
-  /* padding: 1%; */
-
 }
 
 .flip-card {
@@ -360,19 +344,15 @@ img .flipcard_image {
     /* Style the navigation menu */
     #links {
       overflow: hidden;
-      /* background-color: #333; */
       position: relative;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
-    #links {
+    #links, nav{
       display: flex;
       flex-direction: row;
     }
 
-    #links .current {
-      display: inline;
-    }
     nav a {
       font-family: 'Open Sans Condensed';
       color: #000000;
@@ -392,13 +372,10 @@ img .flipcard_image {
     nav a.icon {
       display: none;
     }
-
-  /* for desktop */
-  nav {
-    display: block;
-    margin-top: 0;
-    background-color: #fff;
-  }
+    nav, #links{
+      display: flex;
+      flex-direction: row;
+    }
 
   nav a {
     padding: 1%;
@@ -409,10 +386,11 @@ img .flipcard_image {
     margin-top: 0%;
   }
 
-
   .current {
-    padding: 1%;
-    /*border-bottom-style: none;*/
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-bottom-style: none;
   }
 
   h1 {

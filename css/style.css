@@ -32,7 +32,8 @@ nav a {
 }
 
 nav a:hover{
-  color: #f599c0;
+  /* color: #f599c0; */
+  color: #f4e981;
 }
 
 /* Style the navigation menu */
@@ -62,7 +63,8 @@ nav a.icon {
 }
 
 .current {
-  background-color: #f599c0;
+  /* background-color: #f599c0; */
+  background-color: #f4e981;
   font-family: 'Open Sans';
   font-weight: bold;
   border-style: solid;
@@ -130,9 +132,16 @@ p {
   font-size: 125%;
 }
 
+.homepage p {
+  color: #fff;
+  text-align: center;
+}
+
 .homepage > p {
-  background-color: rgba(242, 242, 242, 0.8);
-  margin: 5%;
+  /* background-color: rgba(242, 242, 242, 0.8); */
+  background-color: #000;
+  text-decoration-color: #fff;
+  margin: 0%;
   padding: 5%;
   font-size: 175%;
 }
@@ -157,7 +166,8 @@ img {
 }
 
 footer {
-  background: #f599c0;
+  /* background: #f599c0; */
+  background: #f4e981;
   height: auto;
   width: 100vw;
   bottom: 0;
@@ -243,8 +253,9 @@ h3 {
 
 .wuts_baton h2 {
   color: #fff;
-  padding-left: 5%;
+  /* padding-left: 5%; */
   background-color: #000;
+  text-align: center;
 }
 
 .wuts_baton p, .com_twirl_div p {
@@ -345,7 +356,8 @@ img .flipcard_image {
 /* ACCORDIONNNNNNSSSSS */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #f599c0;
+  /* background-color: #f599c0; */
+  background-color: #f4e981;
   /*color: #444; */
   cursor: pointer;
   /* padding: 18px; */
@@ -373,6 +385,45 @@ img .flipcard_image {
   margin-left: -2%;
 }
 
+/* parallax stuff
+.parallax {
+  /* The image used
+  background-image: url("images/parallax2.jpg");
+
+  /* Set a specific height
+  height: 100vh;
+
+  /* Create the parallax scrolling effect
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+end of parallax */
+
+
+/*new parallax*/
+.parallax {
+  /* The image used */
+  background-image: url("../images/parallax1.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p.homepageInfo {
+  height: 60vh;
+}
+
+#greeting {
+  width: 100%;
+}
 @media only screen and (min-width: 600px){
   /* for tablets */
     .overall_my_story_container {
@@ -389,12 +440,13 @@ img .flipcard_image {
 }
 
 @media only screen and (min-width: 768px){
-
+  .parallax {
+    background-attachment: scroll;
+  }
     /* #links {
       overflow: hidden;
       position: relative;
     } */
-
     nav a {
       font-family: 'Open Sans Condensed';
       color: #000000;
@@ -414,7 +466,6 @@ img .flipcard_image {
       margin-bottom: 0%;
       margin-top: 0%;
     } */
-
     nav a:hover{
       color: #f599c0;
     }
@@ -426,8 +477,6 @@ img .flipcard_image {
       display: flex;
       flex-direction: row;
     }
-
-
 
   .current {
     padding: 1%;
@@ -505,6 +554,7 @@ img .flipcard_image {
   .sticky + .content {
     padding-top: 200%;
   }
+
 
 }
 

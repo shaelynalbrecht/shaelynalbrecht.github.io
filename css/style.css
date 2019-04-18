@@ -313,12 +313,14 @@ img .flipcard_image {
 
 .flip-card-front {
   background-color: #fff;
+  /* background: transparent; */
   color: black;
   z-index: 2;
 }
 
 .flip-card-back {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: transparent;
   z-index: 1;
 }
 
@@ -349,7 +351,8 @@ img .flipcard_image {
   /* padding: 18px; */
   width: 100%;
   /* text-align: left; */
-  border: none;
+  border-style: solid;
+  border-color: #000;
   outline: none;
   transition: 0.4s;
 }
@@ -387,13 +390,11 @@ img .flipcard_image {
 
 @media only screen and (min-width: 768px){
 
-    /* Style the navigation menu */
     #links {
       overflow: hidden;
       position: relative;
     }
 
-    /* Hide the links inside the navigation menu (except for logo/home) */
     #links, nav{
       display: flex;
       flex-direction: row;
@@ -528,7 +529,7 @@ img .flipcard_image {
 }
 
 @media print {
-       .qr_code{
-            background-image: url('http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://shaelynalbrecht.github.io')
+       body:after{
+            content: url(https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=http://shaelynalbrecht.github.io&choe=UTF-8);
             }
 }

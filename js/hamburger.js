@@ -10,9 +10,20 @@ function hamburgerFunction() {
     x.style.marginTop = "10%";
   }
 }
-// let mainNav = document.getElementById('links');
-// let navBarToggle = document.getElementById('js-navbar-toggle');
-//
-// navBarToggle.addEventListener('click', function () {
-//   mainNav.classList.toggle('active');
-// });
+
+window.addEventListener("resize", displayNav);
+
+
+function displayNav(){
+  var winWidth = window.innerWidth;
+  console.log(winWidth);
+  var x = document.getElementById("links");
+  if (winWidth > 768){
+    x.style.display = "flex";
+    x.style.flexDirection = "row";
+    x.style.marginTop = "0%";
+  }
+  else {
+    x.style.display = "none";
+  }
+}

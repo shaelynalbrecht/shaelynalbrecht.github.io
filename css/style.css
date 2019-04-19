@@ -72,7 +72,7 @@ nav a.icon {
   font-weight: bold;
   border-style: solid;
   border-color: #000000;
-  padding: 0% 4% 0% 2%;
+  padding: 0% 2% 0% 2%;
   color: #000000;
   text-transform: uppercase;
 }
@@ -676,6 +676,10 @@ p.homepageInfo {
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
   .sticky + .content {
     padding-top: 200%;
+  }
+
+  .home {
+    font-size: 150%;
   }
 
 

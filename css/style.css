@@ -72,13 +72,13 @@ nav a.icon {
   font-weight: bold;
   border-style: solid;
   border-color: #000000;
-  padding: 0% 2% 0% 2%;
+  padding: 0% 4% 0% 2%;
   color: #000000;
   text-transform: uppercase;
 }
 
 body{
-  background: #ffffff;
+  background: #fff;
   /* color: #3c006f; */
   padding-top: 0%;
 }
@@ -147,7 +147,7 @@ p {
 
 .homepage p {
   /* color: #fff; */
-  color: #000;
+  /* color: #000; */
   text-align: center;
 }
 
@@ -155,7 +155,7 @@ p {
   background-color: transparent;
   /* background-color: #000; */
   /* text-decoration-color: #fff; */
-  color: #000;
+  color: #ffffff;
   margin: 0%;
   padding: 5%;
   font-size: 175%;

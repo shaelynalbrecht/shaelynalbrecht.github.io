@@ -526,6 +526,11 @@ p.homepageInfo {
     padding-right: 2%;
   }
 
+  nav a.current .home {
+    padding-right: 50%;
+    margin-right: 5%;
+  }
+
   h1 {
     margin-top: 0%;
   }

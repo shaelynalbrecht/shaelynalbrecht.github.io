@@ -1,0 +1,37 @@
+/* fonts for reference!
+font-family: gill-sans-nova,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: gill-sans-nova,sans-serif;
+font-weight: 700;
+font-style: italic;
+
+font-family: gill-sans-nova,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: gill-sans-nova,sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: gill-sans-nova,sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: gill-sans-nova,sans-serif;
+font-weight: 300;
+font-style: italic;
+
+font-family: gill-sans-nova,sans-serif;
+font-weight: 600;
+font-style: normal;
+
+font-family: gill-sans-nova,sans-serif;
+font-weight: 600;
+font-style: italic;
+
+font-family: adobe-handwriting-ernie,sans-serif;
+font-weight: 400;
+font-style: normal;
+ */

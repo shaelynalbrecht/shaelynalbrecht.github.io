@@ -1,0 +1,279 @@
+h1, h3, h4, h5, h6 {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #000;
+  padding-left: 2vh;
+}
+
+h1 {
+  padding-top: 4vh;
+  /* padding-bottom: 5vh; */
+  background-color: #FFF;
+}
+
+.emphasis, .btn {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #000;
+  padding-left: 2vh;
+  padding-bottom: 5vh;
+  font-size: 3vh;
+}
+
+p, li {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #000;
+  padding-left: 2vh;
+}
+
+main {
+  margin-top: 5vh;
+  min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer */
+}
+
+/* Fonts */
+.nova-light {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.nova-light-italic {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.nova-semibold {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nova-semibold-italic {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.adobe-handwriting {
+  font-family: adobe-handwriting-ernie,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-shaelyn {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.footer-logos {
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social {
+  height: 5vh;
+  width: 5vh;
+}
+
+footer p {
+  padding-top: 2vh;
+  text-align: center;
+}
+
+footer {
+  height: auto;
+  width: 100vw;
+  bottom: 0;
+	padding-bottom: 4vh;
+}
+
+.portfolio-container {
+  margin-top: 5vh;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+h1.about-shae, h1.portfolio-title {
+  background-color: #FFFFFF;
+  padding-top: 5vh;
+}
+
+.card:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid #8CD9EA;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.welcome {
+  font-family: gill-sans-nova,sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #000;
+  padding-left: 2vh;
+  padding-bottom: 5vh;
+  padding-top: 3vh;
+}
+
+.typewriting {
+  color: #8CD9EA;
+}
+
+.greeting, .welcome {
+  text-align: center;
+}
+
+.mywork {
+  align: center;
+}
+
+.headersize {
+  font-size: 6vh;
+}
+
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+.project-title {
+  margin-top: 6vh;
+}
+
+.cid-top-img {
+  padding-left: 2vh;
+}
+
+.skillsum {
+  margin-top: 2vh;
+  /* border-style: solid;
+  border-width: thick;
+  border-color: #8CD9EA; */
+  margin-bottom: 2vh;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+.blueborder {
+  border-style: solid;
+  border-width: thick;
+  border-color: #8CD9EA;
+  margin: 2vh;
+  border-radius: 5px;
+  padding-top: 1vh;
+}
+
+.story {
+  padding-bottom: 2vh;
+
+}
+
+.shae-img {
+  margin-bottom: 2vh;
+}
+
+.probflower {
+  display: inline;
+  width: 10%;
+}
+
+.the-prob p {
+  font-size: 4vh;
+  text-align: center;
+}
+
+.the-prob h3, .the-goal h3 {
+  text-align: center;
+}
+
+.the-goal p {
+  font-size: 4vh;
+  text-align: center;
+}
+
+.the-prob {
+  border-right-style: none;
+  border-top-right-radius: 0px;
+  border-bottom-style: none;
+  border-bottom-left-radius: 0px;
+}
+
+.the-goal {
+  border-left-style: none;
+  border-top-right-radius: 0px;
+  border-top-style: none;
+  border-bottom-left-radius: 0px;
+}
+
+.spacing {
+  margin-bottom: 2vh;
+}
+
+.dive {
+  font-size: 6vh;
+  padding-top: 4vh;
+}
+
+@media screen and (min-width: 800){
+  .social {
+    height: 5vh;
+  }
+}

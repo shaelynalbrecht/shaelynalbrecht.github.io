@@ -221,6 +221,10 @@ h1.about-shae, h1.portfolio-title {
   padding-top: 1vh;
 }
 
+.blueborder p {
+  padding-right: 1vh;
+}
+
 .story {
   padding-bottom: 2vh;
 

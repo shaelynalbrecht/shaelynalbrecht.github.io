@@ -203,7 +203,7 @@ h1.about-shae, h1.portfolio-title {
 }
 
 .skillsum {
-  margin-top: 2vh;
+  margin-top: -1vh;
   /* border-style: solid;
   border-width: thick;
   border-color: #8CD9EA; */
@@ -220,6 +220,20 @@ h1.about-shae, h1.portfolio-title {
   border-radius: 5px;
   padding-top: 1vh;
 }
+
+.bluebg  {
+  background-color: #8CD9EA;
+  padding-top: 1vh;
+  margin: 2vh;
+  padding: 1vh;
+  margin-bottom: 1vh;
+}
+
+.bluebg h4, .bluebg li, .bluebg p {
+  padding-left: 1vh;
+  margin-right: 2vh;
+}
+
 
 .blueborder p {
   padding-right: 1vh;
@@ -276,8 +290,13 @@ h1.about-shae, h1.portfolio-title {
   padding-top: 4vh;
 }
 
+.bigger-about-p {
+  font-size: 2.5vh;
+}
 @media screen and (min-width: 800){
   .social {
     height: 5vh;
   }
+
+
 }
